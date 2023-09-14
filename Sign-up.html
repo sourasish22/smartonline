@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html>
 	
@@ -40,14 +39,9 @@
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	
 	<script type="text/javascript" src="engine1/jquery.js"></script>
-	<script>
-   function toggleZoomScreen() {
-       document.body.style.zoom = "110%";
-   } 
- 
-</script>
+	
 </head>	
-<body style="color:gray;" onload="toggleZoomScreen()">
+<body style="color:gray;" >
 	<div>
 	
 	<!--Logo Section-->
@@ -199,11 +193,10 @@
 										
 										<a href="about-us.html">
 										<div class="modal-header">
-											<h4 class="modal-title">Objective</h4>
+											<h4 class="modal-title">Objectives</h4>
 										</div>
 										</a>
-									 
-										
+									
 								
 								</div>
 							</div>
@@ -264,204 +257,151 @@
 		</div>
 	</nav>
 	
-			
-		
-<!--slider-->
-	<div class="ccontainer-fluid">
-		<div class="row">
-		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background-color:#D6D0D0; height:0px;" >
-		</div>
-	</div>
-		<div class="row" sstyle="bbackground-color:#fff;ppadding:10px;margin-top:10px;bborder:10px solid #e3e3e3;">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			
-					<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
-	<div id="wowslider-container1">
-	<div class="ws_images"><ul>
-		<li><img src="data1/images/1.jpg" alt="1" title="1" id="wows1_0"/></li>
-		<li><img src="data1/images/2.jpg" alt="2" title="2" id="wows1_1"/></li>
-		<li><img src="data1/images/3.jpg" alt="3" title="3" id="wows1_2"/></li>
-		<li><img src="data1/images/4.jpg" alt="4" title="4" id="wows1_3"/></li>
-		<li><img src="data1/images/5.jpg" alt="5" title="5" id="wows1_4"/></li>
-		<li><img src="data1/images/6.jpg" alt="6" title="6" id="wows1_5"/></li>
-		<li><img src="data1/images/7.jpg" alt="7" title="7" id="wows1_6"/></li>
-		<li><img src="data1/images/8.jpg" alt="8" title="8" id="wows1_7"/></li>
-		
-	</ul></div>
+<br><br>
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="dist/css/bootstrap-imageupload.css" rel="stylesheet">
+ <div class="container">
+  <div class="row col-md-6 col-md-offset-3">
+   <div id="submit-message" class="text-center" style="display:none;">
+    <h1><i class="glyphicon glyphicon-ok"></i></h1>
+    <h2>Submitted!</h2>
+    </div>
+  <div  class="panel panel-primary">
+  <div style="background-color:#87cefa" class="panel-heading text-center"><h1>Registration Form</h1></div>
+  
+  <div class="panel-body">
+   <form action="%%=RequestParameter('PAGEURL')=%%" method="post" id="myForm">
+    <div class="form-group">
+     <label for="firstName">First Name</label>
+     <input type="text" name="firstName" class="form-control" id="firstName" required>
+    </div>
+    <div class="form-group">
+     <label for="lastName">Last Name</label>
+     <input type="text" name="lastName" class="form-control" id="lastName" required>
+    </div>
+    <div class="form-group">
+     <label for="email">Email</label>
+     <input type="text" name="email" class="form-control" id="email" required>
+    </div>
+	<div class="form-group">
+     <label for="address">Address</label>
+     <input type="text" name="address" class="form-control" id="address">
+    </div>
 	
-	<div class="ws_shadow"></div>
-	</div>	
-	<script type="text/javascript" src="engine1/wowslider.js"></script>
-	<script type="text/javascript" src="engine1/script.js"></script>
-	<!-- End WOWSlider.com BODY section -->
-			
-		</div>
-	</div>
-</div>
+     <div class="form-group">
+     <label>Gender</label>
+     <div>     
+       <label for="male" class="radio-inline"><input type="radio" name="gender" id="male" value="male">Male</label>
+       <label for="female" class="radio-inline"><input type="radio" name="gender" id="female" value="female">Female</label>
+       <label for="other" class="radio-inline"><input type="radio" name="gender" id="other" value="other">Other</label>
+     </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label">D.O.B</label>
+      <input type="date" class="form-control" id="date" name="dob">
+    </div>
+	
+	       
+	
+	
+	
+    <div class="form-group">
+      <label class="control-label">Contact NO</label>
+      <input type="text"  class="form-control" placeholder="" id="contactno" name="contactno" required>
+    </div>
 
+	  
 
-		<script type="text/javascript" src="../code.jquery.com/jquery-1.7.2.js"></script>
-		<script>
-			$(document).ready(function() {
-				$('.nav-tabs2 > li > a').click(function(event){
-					event.preventDefault();//stop browser to take action for clicked anchor
-					
-					//get displaying tab content jQuery selector
-					var active_tab_selector = $('.nav-tabs2 > li.active > a').attr('href');					
-					
-					//find actived navigation and remove 'active' css
-					var actived_nav = $('.nav-tabs2 > li.active');
-					actived_nav.removeClass('active');
-					
-					//add 'active' css into clicked navigation
-					$(this).parents('li').addClass('active');
-					
-					//hide displaying tab content
-					$(active_tab_selector).removeClass('active');
-					$(active_tab_selector).addClass('hide');
-					
-					//show target tab content
-					var target_tab_selector = $(this).attr('href');
-					$(target_tab_selector).removeClass('hide');
-					$(target_tab_selector).addClass('active');
-				});
-			});
-		</script>
-		<style>
-			/** Start: to style navigation tab **/
-			.nav {
-			  margin-bottom: 0px;
-			  margin-left: 0;
-			  list-style: none;
-			  height:100%;
-			}
-
-			.nav > li > a {
-			  display: block;
-			  height:100%;
-			}
-			
-			.nav-tabs2{
-			  *zoom: 1;
-			  height:100%;
-			}
-
-			.nav-tabs2:before,
-			.nav-tabs2:after {
-			  display: table;
-			  content: "";
-			  height:100%;
-			}
-
-			.nav-tabs2:after {
-			  clear: both;
-			  height:100%;
-			}
-
-			.nav-tabs2 > li {
-			  float: left;
-			  height:100%;
-			}
-
-			.nav-tabs2 > li > a {
-			  padding-right: 12px;
-			  padding-left: 12px;
-			  margin-right: 2px;
-			  line-height: 14px;
-			  height:100%;
-			}
-
-			.nav-tabs2 {
-			  border-bottom: 1px solid #ddd;
-			  height:100%;
-			}
-
-			.nav-tabs2 > li {
-			  margin-bottom: -1px;
-			  height:100%;
-			}
-
-			.nav-tabs2 > li > a {
-			  padding-top: 8px;
-			 height:100%;
-			  line-height: 18px;
-			  border: 1px solid transparent;
-			  -webkit-border-radius: 4px 4px 0 0;
-				 -moz-border-radius: 4px 4px 0 0;
-					  border-radius: 4px 4px 0 0;
-			}
-
-			.nav-tabs2 > li > a:hover {
-			  border-color: #eeeeee #eeeeee #dddddd;
-			}
-
-			.nav-tabs2 > .active > a,
-			.nav-tabs2 > .active > a:hover {
-			  color: #555555;
-			  cursor: default;
-			  background-color: #ffffff;
-			  border: 1px solid #ddd;
-			  border-bottom-color: transparent;
-			}
-			
-			li {
-			  line-height: 18px;
-			}
-			
-			.tab-content.active{
-				display: block;
-			}
-			
-			.tab-content.hide{
-				display: none;
-			}
-			
-			
-			/** End: to style navigation tab **/
-</style>
-<style>
-		.scrollable {
-		height: 270px; 
-		overflow-y: auto;
-		}
-</style>
-
-</style>
 <body onload="toggleZoomScreen()">
-<div class="container-fluid" id="aboutUs">
-			<div class="row" style="border:1px solid #E3E3E3;background-color:#F9F9F9;padding:0px;margin-top:-19px;">
-				<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10"> 
-				
-					<marquee scrollamount="6" onmouseover="this.stop()" onmouseout="this.start()" style="color:#db0425; font-size:15px;">
-					
-					
-					<!--<img src="assets\image\new.gif">
-					<i class="fa fa-hand-o-right" style="font-size:18px;color:red"></i>
-					<a href="image/admission_notice_214.jpg" target="_blank">
-						
-						Urgent Admission Notice
-						
-						</a>
-						
-					&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
-					
-					<img src="assets\image\new.gif">
-					<a href="pdf/23-24/B.Sc_B.Sc-IT _Provisional_Admission_list-2023-2024.pdf" target="_blank">
-						
-						Provisionally Selected Students List
-						
-						</a>-->
+ 
+</script>
 
-					<!--Published on 23/08/2021-->
-					<b>Welcome to IT EDUCATION CENTRE,KIRTANPARA</b>	&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;
-					
-					BONGAIGAON, Assam, India
-						
-					</marquee>
-					
-				</div>
-				
-				</div>
-			
+
+ 
+
+
+</html>
+
+		
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="dist/css/bootstrap-imageupload.css" rel="stylesheet">
+
+        <style>
+           
+            .imageupload {
+                margin: 20px 0;
+            }
+        </style>
+
+    </head>
+
+    <body onload="toggleZoomScreen()">
+
+  
+
+            
+
+            <!-- bootstrap-imageupload. -->
+            <div class="imageupload panel panel-default">
+	                <div class="panel-heading clearfix">
+                    <h3 class="panel-title pull-left">Upload Image</h3>
+                    <div class="btn-group pull-right">
+                        <button type="button" class="btn btn-default active">File</button>
+                        <button type="button" class="btn btn-default">URL</button>
+                    </div>
+                </div>
+                <div class="file-tab panel-body">
+                    <label class="btn btn-default btn-file">
+                        <span>Browse</span>
+                        <!-- The file is stored here. -->
+                        <input type="file" name="image-file">
+                    </label>
+                    <button type="button" class="btn btn-default">Remove</button>
+                </div>
+                <div class="url-tab panel-body">
+                    <div class="input-group">
+                        <input type="text" class="form-control hasclear" placeholder="Image URL">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-default">Submit</button>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-default">Remove</button>
+                    <!-- The URL is stored here. -->
+                    <input type="hidden" name="image-url">
+                </div>
+            </div>
+
+            <!-- bootstrap-imageupload method buttons. -->
+            
+  
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="dist/js/bootstrap-imageupload.js"></script>
+
+        <script>
+            var $imageupload = $('.imageupload');
+            $imageupload.imageupload();
+
+            $('#imageupload-disable').on('click', function() {
+                $imageupload.imageupload('disable');
+                $(this).blur();
+            })
+
+            $('#imageupload-enable').on('click', function() {
+                $imageupload.imageupload('enable');
+                $(this).blur();
+            })
+
+            $('#imageupload-reset').on('click', function() {
+                $imageupload.imageupload('reset');
+                $(this).blur();
+            });
+        </script>
+		
+		
+		    <div class="text-center">
+        <input type="submit" id="mySubmission" class="btn  btn-primary" onclick="submitForm();" value="Submit">
+    </div>
 
 </html>
