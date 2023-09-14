@@ -1,0 +1,29 @@
+span{
+    color:red;
+}
+input[type=file] {
+    height: 40%;
+}
+#imagePreview {
+    width: 180px;
+    height: 180px;
+    background-position: center center;
+    background-size: cover;
+    -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3);
+    display: inline-block;
+}
+.dark-grey{
+    text-align: center;
+}
+#box-modified{
+    border:2px solid #bdc3c7;
+    background-color:#ecf0f1;
+}
+#box-modified-1{
+    border:2px solid #bdc3c7;
+    background-color:#ecf0f1;
+    margin-top: 3%;
+}
+section{
+    margin-top: 1%;
+}
