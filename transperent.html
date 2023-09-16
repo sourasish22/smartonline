@@ -1,0 +1,144 @@
+<html>
+<head>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color:white;
+  background-size: cover;
+  min-height: 100vh;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+nav {
+  text-align: center;
+
+}
+
+.menu {
+  display: inline-block;
+}
+
+.menu > li {
+  float: left;
+  color: red;
+  width: 260px;
+  height: 50px;
+  line-height: 40px;
+  background: #F3E8EA;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.sub-menu {
+  transform: scale(0);
+  transform-origin: top center;
+  transition: all 300ms ease-in-out;
+}
+
+
+.sub-menu li {
+  font-size: 14px;
+  background: rgba(0,0,0, 0.8);
+  padding: 8px 0;
+  color: white;
+  border-bottom: 1px solid rgba(255,255,255, 0.2);
+  /*display: none;*/
+  transform: scale(0);
+  transform-origin: top center;
+  transition: all 300ms ease-in-out;
+}
+
+.sub-menu li:last-child {
+  border-bottom: 0;
+}
+
+
+.sub-menu li:hover 
+{
+  background: #6495ED;
+}
+
+
+.menu > li:hover .sub-menu li
+{
+
+  transform: scale(1);
+}
+
+
+.menu > li:hover .sub-menu 
+{
+  transform: scale(1);
+}
+
+
+
+</style>
+
+<body>
+<nav>
+  <ul class="menu">
+    <li>Mac
+      <ul class="sub-menu">
+        <li>MacBook</li>
+        <li>MacBook Air</li>
+        <li>iMac</li>
+        <li>Mac Pro</li>
+        <li>Mac Mini</li>
+      </ul>
+    </li>
+    
+    
+    <li>iPad
+      <ul class="sub-menu">
+        <li>iPad Pro</li>
+        <li>iPad</li>
+        <li>iPad mini 4</li>
+        <li>Accessories</li>
+        <li>Compare</li>
+      </ul>
+    </li>
+    
+    
+    <li>iPhone
+      <ul class="sub-menu">
+        <li>iPhone 7</li>
+        <li>iPhone 6s</li>
+        <li>iPhone SE</li>
+        <li>iOS 10</li>
+        <li>Compare</li>
+      </ul>
+    </li>
+    
+    
+    <li>Music
+      <ul class="sub-menu">
+        <li>Apple Music</li>
+        <li>iTunes</li>
+        <li>Home Pod</li>
+        <li>iPod</li>
+        <li>Gift Cards</li>
+      </ul>
+    </li>
+    
+    
+    <li>TV
+      <ul class="sub-menu">
+        <li>Apple TV</li>
+        <li>tvOS</li>
+        <li>Accessories</li>
+        <li>Movies</li>
+        <li>TV shows</li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+</body>
